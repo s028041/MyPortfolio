@@ -1,6 +1,17 @@
-import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-
+import React, { Component } from "react";
+import {
+  Tabs,
+  Tab,
+  Grid,
+  Cell,
+  Card,
+  CardTitle,
+  CardText,
+  CardActions,
+  Button,
+  CardMenu,
+  IconButton
+} from "react-mdl";
 
 class Projects extends Component {
   constructor(props) {
@@ -9,57 +20,70 @@ class Projects extends Component {
   }
 
   toggleCategories() {
-
-    if(this.state.activeTab === 0){
-      return(
+    if (this.state.activeTab === 0) {
+      return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-            <CardText>
-             Some text about project    
-        </CardText>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover"
+              }}
+            >
+              React Project #1
+            </CardTitle>
+            <CardText>Some text about project</CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
-              
             </CardActions>
-            <CardMenu style={{color: '#fff'}}>
+            <CardMenu style={{ color: "#fff" }}>
               <IconButton name="share" />
             </CardMenu>
           </Card>
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
-            <CardText>
-                Text about project
-            </CardText>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover"
+              }}
+            >
+              React Project #2
+            </CardTitle>
+            <CardText>Text about project</CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
-            
             </CardActions>
-            <CardMenu style={{color: '#fff'}}>
+            <CardMenu style={{ color: "#fff" }}>
               <IconButton name="share" />
             </CardMenu>
           </Card>
-          
         </div>
-      )
+      );
     }
   }
   render() {
-    return(
+    return (
       <div>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+        <Tabs
+          activeTab={this.state.activeTab}
+          onChange={tabId => this.setState({ activeTab: tabId })}
+          ripple
+        >
           <Tab>React</Tab>
-          
         </Tabs>
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
+        <Grid>
+          <Cell col={12}>
+            <div className="content">{this.toggleCategories()}</div>
+          </Cell>
+        </Grid>
       </div>
-    )
+    );
   }
 }
 export default Projects;

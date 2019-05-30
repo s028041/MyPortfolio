@@ -3,6 +3,7 @@ import { Grid, Cell } from "react-mdl";
 import Education from "./education";
 import Experience from "./experience";
 import Skill from "./skills";
+import Avatar from "../assets/avatar.png";
 
 class Resume extends Component {
   render() {
@@ -11,16 +12,23 @@ class Resume extends Component {
         <Grid>
           <Cell col={4}>
             <div style={{ textAlign: "center" }}>
-              <img
-                src="http://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                alt="avatar"
-                style={{ height: "200px" }}
-              />
+              <img src={Avatar} alt="avatar" style={{ height: "250px" }} />
             </div>
-            <h2 style={{ paddingTop: "2em" }}>Dominykas Kugelevicius</h2>
-            <h4 stlye={{ color: "gray" }}>Programmer</h4>
+            <h2 style={{ paddingTop: "2em" }}>Dominykas Kugelevičius</h2>
+            <h4 stlye={{ color: "gray" }}>Junior programmer</h4>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-            <p>Text about my</p>
+            <p style={{ textAlign: "justify" }}>
+              I am an undergraduate student, looking to take part in summer
+              internship program. I am responsible, communicative, motivated to
+              work and learn. Looking forward to gaining more experience working
+              in IT field as much as I can, get to know more about working in
+              team. I would like to improve my web development programming
+              skills creating high quality web applications. During studies it
+              made me eager to improve my skills in this particular field. For
+              me this pratice would be very important, because it would help to
+              develop my skills and knowledge towards personal goals to be
+              achvieved.
+            </p>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Phone</h5>
             <p>+37066246564</p>
@@ -34,22 +42,28 @@ class Resume extends Component {
             <Education
               startYear={2015}
               endYear={2019}
-              schoolName={"Vilniaus Kolegija University of Applied Sience"}
-              schoolDescription={"blbalblalal"}
+              schoolName={
+                "Vilniaus Kolegija/University Of Applied Sciences Faculty Of Electronics and Informatics"
+              }
+              schoolDescription={"Modern Smart Devices"}
             />
             <hr style={{ borderTop: "3px solid #e22947" }} />
             <h2>Experience</h2>
             <Experience
-              startYear={2016}
-              endYear={2019}
+              startYear={"Oct 2017"}
+              endYear={"Feb 2018"}
               jobName={"First Internship"}
-              jobDescription={".NET dev"}
+              jobDescription={
+                "Teltonika Internet Of Things Acamedy, .NET programming"
+              }
             />
             <Experience
-              startYear={2016}
-              endYear={2019}
+              startYear={"Sep 2018"}
+              endYear={"Jan 2019"}
               jobName={"Second Internship"}
-              jobDescription={"Android developer Java"}
+              jobDescription={
+                "Teltonika Internet Of Things Acamedy, Java programming"
+              }
             />
             <hr style={{ borderTop: "3px solid #e22947" }} />
             <h2>Skills</h2>
@@ -59,8 +73,8 @@ class Resume extends Component {
               skill1={"HTML/CSS"}
               skill2={"JavaScript"}
               skill3={"NodeJS"}
-              skill4={"Mapping"}
-              skill5={"SomeSkills"}
+              skill4={"Android Studio"}
+              skill5={"Git"}
             />
           </Cell>
         </Grid>

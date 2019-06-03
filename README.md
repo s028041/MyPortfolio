@@ -15,6 +15,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Running the tests
 
+For testing the APP I have used cypress, you can find more about it here <a href = "https://www.cypress.io/"> Cypress</a>
+
+<hr>
+Steps to run a test:
+<li>If you are already projects folder, just run command line : <b>node_modules/.bin/cypress open</b> </li>
+This is example: C:\Users\Dominyko\myapp> node_modules/.bin/cypress open
+<li>Then find and click on test called : "my_portfolio_nav_test.js" in the integration tests window</li>
+<li>After it the test will run and log will appear</li>
+
 ### Build With
 
 <li>React</li>

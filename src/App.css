@@ -9,7 +9,7 @@
   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   text-align: center;
-  position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -84,7 +84,7 @@
 }
 
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 44px;
   font-weight: bold;
   color: white;
 }

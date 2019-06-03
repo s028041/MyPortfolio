@@ -5,18 +5,17 @@ class Skill extends Component {
   render() {
     return (
       <Grid>
-        <Cell style={{ fontSize: "16px" }} col={4}>
-          <li>{this.props.skill}</li>
-          <li>{this.props.skill1}</li>
+        <Cell style={{ fontSize: "16px" }} col={12}>
+          {this.props.skill}
         </Cell>
-        <Cell style={{ fontSize: "16px" }} col={4}>
+        {/* <Cell style={{ fontSize: "16px" }} col={4}>
           <li>{this.props.skill2}</li>
           <li>{this.props.skill3}</li>
         </Cell>
         <Cell style={{ fontSize: "16px" }} col={4}>
           <li>{this.props.skill4}</li>
           <li>{this.props.skill5}</li>
-        </Cell>
+        </Cell> */}
       </Grid>
     );
   }

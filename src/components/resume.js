@@ -5,7 +5,31 @@ import Experience from "./experience";
 import Skill from "./skills";
 import Avatar from "../assets/avatar.png";
 
+const SKILLS = [
+  {
+    id: 1,
+    skill: "HTML/CSS"
+  },
+  {
+    id: 2,
+    skill: "JavaScript"
+  },
+  {
+    id: 3,
+    skill: "React"
+  },
+  {
+    id: 4,
+    skill: "NodeJS"
+  },
+  {
+    id: 5,
+    skill: "Git"
+  }
+];
+
 class Resume extends Component {
+  renderSkills = ({ id, skill }) => <li key={id}>{skill}</li>;
   render() {
     return (
       <div>
@@ -18,22 +42,21 @@ class Resume extends Component {
             <h4 stlye={{ color: "gray" }}>Junior programmer</h4>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <p style={{ textAlign: "justify" }}>
-              I am an undergraduate student, looking to take part in summer
-              internship program. I am responsible, communicative, motivated to
-              work and learn. Looking forward to gaining more experience working
-              in IT field as much as I can, get to know more about working in
-              team. I would like to improve my web development programming
-              skills creating high quality web applications. During studies it
-              made me eager to improve my skills in this particular field. For
-              me this pratice would be very important, because it would help to
-              develop my skills and knowledge towards personal goals to be
-              achvieved.
+              I am recently graduated, looking to take part in summer internship
+              program. I am responsible, highly adaptable to any environment,
+              communicative, motivated to work and learn. Looking forward to
+              gaining more experience working in IT field as much as I can, get
+              to know more about working in team. I would like to improve my web
+              development programming skills creating high quality web
+              applications. For me this pratice would be very important, because
+              it would help to develop my skills and knowledge towards personal
+              goals to be achvieved.
             </p>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Phone</h5>
             <p>+37066246564</p>
             <h5>E-mail</h5>
-            <p>kugelevicius@gmail.com</p>
+            <p>kugeleviciusd@gmail.com</p>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
           </Cell>
           <Cell className="resume-right-col" col={8}>
@@ -69,12 +92,12 @@ class Resume extends Component {
             <h2>Skills</h2>
 
             <Skill
-              skill={"React"}
-              skill1={"HTML/CSS"}
-              skill2={"JavaScript"}
-              skill3={"NodeJS"}
-              skill4={"Android Studio"}
-              skill5={"Git"}
+              skill={SKILLS.map(this.renderSkills)}
+              // skill1={"HTML/CSS"}
+              // skill2={"JavaScript"}
+              // skill3={"NodeJS"}
+              // skill4={"Android Studio"}
+              // skill5={"Git"}
             />
           </Cell>
         </Grid>

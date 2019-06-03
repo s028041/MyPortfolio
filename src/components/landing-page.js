@@ -13,7 +13,15 @@ class Landing extends Component {
               <h1>Junior Front-End Developer</h1>
 
               <hr />
-              <p>HTML/CSS | JavaScript | React | NodeJS | VueJS |</p>
+              {/* <p>HTML/CSS | JavaScript | React | NodeJS | VueJS |</p> */}
+              <p style={{ textAlign: "justify" }}>
+                Hello my names is Dominykas, I am 22 years old. I am passionate
+                about technology - not a specific framework or language. In this
+                line of work it is about adaptation, and what works best for the
+                project. I am open to learning any stack if it works. Please
+                find my resume, so that you can see more of the projects I
+                worked on as well as previous experience.
+              </p>
               <div className="social-links">
                 {/* LinkedIn */}
                 <a

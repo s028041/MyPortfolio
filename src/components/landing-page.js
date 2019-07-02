@@ -3,10 +3,6 @@ import { Grid, Cell } from "react-mdl";
 import Avatar from "../assets/avatar.png";
 
 class Landing extends Component {
-  hideToggle() {
-    var selectorId = document.querySelector(".mdl-layout");
-    selectorId.MaterialLayout.toggleDrawer();
-  }
   render() {
     return (
       <div style={{ width: "100%", margin: "auto" }}>

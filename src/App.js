@@ -24,12 +24,8 @@ function App() {
         </Header>
         <Drawer title="myPortfolio" className="mdl-layout--small-screen-only">
           <Navigation>
-            <a href="/resume" onClick={() => this.toggleDrawer()}>
-              Resume
-            </a>
-            <a href="/projects" onClick={() => this.toggleDrawer()}>
-              Projects
-            </a>
+            <a href="/resume/">Resume</a>
+            <a href="/projects/">Projects</a>
             <a href="/" onClick={() => this.toggleDrawer()}>
               Landing Page
             </a>

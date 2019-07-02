@@ -22,14 +22,17 @@ function App() {
             <Link to="/projects">Projects</Link>
           </Navigation>
         </Header>
-        <Drawer title="myPortfolio">
+        <Drawer title="myPortfolio" className="mdl-layout--small-screen-only">
           <Navigation>
-            <Link to="/resume" onClick={() => this.toggleDrawer()}>
+            <a href="/resume" onClick={() => this.toggleDrawer()}>
               Resume
-            </Link>
-            <Link to="/projects" onClick={() => this.toggleDrawer()}>
+            </a>
+            <a href="/projects" onClick={() => this.toggleDrawer()}>
               Projects
-            </Link>
+            </a>
+            <a href="/" onClick={() => this.toggleDrawer()}>
+              Landing Page
+            </a>
           </Navigation>
         </Drawer>
         <Content>

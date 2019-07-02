@@ -24,8 +24,12 @@ function App() {
         </Header>
         <Drawer title="myPortfolio">
           <Navigation>
-            <Link to="/resume">Resume</Link>
-            <Link to="/projects">Projects</Link>
+            <Link to="/resume" onClick={() => this.hideToggle()}>
+              Resume
+            </Link>
+            <Link to="/projects" onClick={() => this.hideToggle()}>
+              Projects
+            </Link>
           </Navigation>
         </Drawer>
         <Content>

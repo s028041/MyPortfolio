@@ -9,8 +9,7 @@ import {
   CardText,
   CardActions,
   Button,
-  CardMenu,
-  IconButton
+  CardMenu
 } from "react-mdl";
 
 const PROJECTS = [
@@ -35,6 +34,9 @@ class Projects extends Component {
     console.log("Project 2 button has been clicked");
     // window.location.href = "https://github.com/s028041/React-Router";
     window.open("https://github.com/s028041/MyPortfolio", "_blank");
+  }
+  handleClick3() {
+    window.open("https://github.com/s028041/meteoApi", "_blank");
   }
 
   renderProject = ({ id, description }) => <p key={id}>{description}</p>;
@@ -62,9 +64,7 @@ class Projects extends Component {
                 GitHub
               </Button>
             </CardActions>
-            <CardMenu style={{ color: "#fff" }}>
-              <IconButton name="share" />
-            </CardMenu>
+            <CardMenu style={{ color: "#fff" }} />
           </Card>
           {/* Project 2 */}
           <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
@@ -84,9 +84,27 @@ class Projects extends Component {
                 GitHub
               </Button>
             </CardActions>
-            <CardMenu style={{ color: "#fff" }}>
-              <IconButton name="share" />
-            </CardMenu>
+            <CardMenu style={{ color: "#fff" }} />
+          </Card>
+          {/* Project 3 */}
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover"
+              }}
+            >
+              Meteo API wheater app
+            </CardTitle>
+            <CardText>Weather web app using meteo.lt api</CardText>
+            <CardActions border>
+              <Button onClick={this.handleClick3} colored>
+                GitHub
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }} />
           </Card>
         </div>
       );

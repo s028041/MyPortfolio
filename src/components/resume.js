@@ -25,6 +25,10 @@ const SKILLS = [
   {
     id: 5,
     skill: "Git"
+  },
+  {
+    id: 6,
+    skill: "ES6"
   }
 ];
 
@@ -42,8 +46,8 @@ class Resume extends Component {
             <h4 stlye={{ color: "gray" }}>Junior programmer</h4>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <p style={{ textAlign: "justify" }}>
-              I am recently graduated, looking to take part in summer internship
-              program. I am responsible, highly adaptable to any environment,
+              I am recently graduated, looking to start working as a front-end
+              developer. I am responsible, highly adaptable to any environment,
               communicative, motivated to work and learn. Looking forward to
               gaining more experience working in IT field as much as I can, get
               to know more about working in team. I would like to improve my web
